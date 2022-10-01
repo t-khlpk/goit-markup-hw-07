@@ -21,7 +21,7 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="./sass/main.scss">
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -67,53 +67,53 @@
           <button class="modal__button" type="button"  data-modal-close>
             <svg class="modal__svg" width="18px" height="18px"><use href="./images/icon/symbol-defs.svg#icon-close"></use></svg>  
           </button>
-          <form class="modal-registr-form">
-            <strong class="form-title">Залиште свої дані, ми вам передзвонимо</strong>
+          <form class="registr-form">
+            <strong class="registr-form__title">Залиште свої дані, ми вам передзвонимо</strong>
             
-            <div class="register-form-group" role="group">
+            <div class="registr-form__group" role="group">
 
-              <label class="form-label">
-                <span class="form-label-text">Ім'я</span>
-                <input class="form-input" type="text" name="name">
-                <svg width="18" height="18" class="form-svg">
+              <label class="registr-form__label">
+                <span class="registr-form__text">Ім'я</span>
+                <input class="registr-form__input" type="text" name="name">
+                <svg width="18" height="18" class="registr-form__svg">
                   <use href="./images/icon/symbol-defs.svg#icon-person"></use>
                 </svg>
               </label>
 
 
-              <label class="form-label">
-                <span class="form-label-text">Телефон</span>
-                <input class="form-input" type="text" name="name">
-                <svg width="18" height="18" class="form-svg">
+              <label class="registr-form__label">
+                <span class="registr-form__text">Телефон</span>
+                <input class="registr-form__input" type="text" name="name">
+                <svg width="18" height="18" class="registr-form__svg">
                   <use href="./images/icon/symbol-defs.svg#icon-phone"></use>
                 </svg>
               </label>
 
 
-              <label class="form-label">
-                <span class="form-label-text">Пошта</span>
-                <input class="form-input" type="email" name="name">
-                <svg width="18" height="18" class="form-svg">
+              <label class="registr-form__label">
+                <span class="registr-form__text">Пошта</span>
+                <input class="registr-form__input" type="email" name="name">
+                <svg width="18" height="18" class="registr-form__svg">
                   <use href="./images/icon/symbol-defs.svg#icon-email"></use>
                 </svg>
               </label>
 
 
-              <label class="form-label">
-                <span class="form-label-text">Коментар</span>
-                <textarea class="modal-comment" name="comment" rows="5" placeholder="Введіть текст"></textarea>
+              <label class="registr-form__label">
+                <span class="registr-form__text">Коментар</span>
+                <textarea class="registr-form__comment" name="comment" rows="5" placeholder="Введіть текст"></textarea>
               </label>
             </div>
 
 
             <label class="form-agreement hidden">
-              <input type="checkbox" name="box" class="input-agreement visually-hidden">
+              <input type="checkbox" name="box" class="form-agreement__input visually-hidden">
               <span class="icon-check"></span>
-              <span class="text-agreement">Погоджуюся з розсилкою та приймаю <a href="" class="link-agreement">Умови договору</a></span> 
+              <span class="form-agreement__text">Погоджуюся з розсилкою та приймаю <a href="" class="form-agreement__link">Умови договору</a></span> 
             </label>
 
 
-            <button type="submit" class="group-btn">Відправити</button>
+            <button type="submit" class="registr-form__btn">Відправити</button>
         
           </form>
 
@@ -210,7 +210,7 @@
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__list">
-            <li class="team__list__item">
+            <li class="team__list-item">
               <img src="./images/img-3.jpg" alt="Ігор Дем'яненко" width="270" />
               <div class="team__block"><h3 class="team__item">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -228,7 +228,7 @@
 
                   </div>
             </li>
-            <li class="team__list__item">
+            <li class="team__list-item">
               <img src="./images/img-2.jpg" alt="Ольга Рєпіна" width="270" />
               <div class="team__block"><h3 class="team__item">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -244,7 +244,7 @@
                         <use href="./images/icon/symbol-defs.svg#icon-linkedin"></use></svg></a></li></ul></div>
                       </div>
             </li>
-            <li class="team__list__item">
+            <li class="team__list-item">
               <img src="./images/img-1.jpg" alt="Микола Тарасов" width="270" />
               <div class="team__block"><h3 class="team__item">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -260,7 +260,7 @@
                         <use href="./images/icon/symbol-defs.svg#icon-linkedin"></use></svg></a></li></ul></div>
               </div>
             </li>
-            <li class="team__list__item">
+            <li class="team__list-item">
               <img src="./images/img.jpg" alt="Михайло Єрмаков" width="270" />
               <div class="team__block"><h3 class="team__item">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -307,7 +307,9 @@
         </div>
       </section>
     </main>
+
     <!-- Footer -->
+
     <footer class="footer">
       <div class="container footer-container">
       <div class="footer__adress">
@@ -316,8 +318,8 @@
     >
     
     <address class="address">
-      <ul class="footer-list">
-        <li class="footer-contacts-item">
+      <ul class="footer__list">
+        <li class="footer__contacts-item">
           <a
             class="address__map"
             href="https://goo.gl/maps/NkWGyPYZtcKStKFVA"
@@ -326,12 +328,12 @@
             >м. Київ, пр-т Лесі Українки, 26</a
           >
         </li>
-        <li class="footer-contacts-item">
+        <li class="footer__contacts-item">
           <a class="address__mail" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li class="footer-contacts-item">
+        <li class="footer__contacts-item">
           <a class="adress__tel" href="tel:+380961111111">
             +38 096 111 11 11</a
           >
@@ -341,24 +343,24 @@
       </div>
     <div class="footer-block">
       <h3 class="footer__subtitle">Приєднуйтесь</h3>
-        <ul class="footer-action"><li class="footer-action-item"><a class="footer-action-link"   href="">
-        <svg class="footer-team-icon">
+        <ul class="footer__action"><li class="footer__action-item"><a class="footer__action-link"   href="">
+        <svg class="footer__team-icon">
           <use href="./images/icon/symbol-defs.svg#icon-instagram"></use></svg></a></li>
-        <li class="footer-action-item"><a class="footer-action-link"   href=""><svg class="footer-team-icon">
+        <li class="footer__action-item"><a class="footer__action-link"   href=""><svg class="footer__team-icon">
           <use href="./images/icon/symbol-defs.svg#icon-twitter"></use></svg></a></li>
-          <li class="footer-action-item"><a class="footer-action-link"   href=""><svg class="footer-team-icon">
+          <li class="footer__action-item"><a class="footer__action-link"   href=""><svg class="footer__team-icon">
             <use href="./images/icon/symbol-defs.svg#icon-facebook"></use></svg></a></li>
-            <li class="footer-action-item"><a class="footer-action-link"   href=""><svg class="footer-team-icon">
+            <li class="footer__action-item"><a class="footer__action-link"   href=""><svg class="footer__team-icon">
               <use href="./images/icon/symbol-defs.svg#icon-linkedin"></use></svg></a></li></ul>
     </div>
-    <div class="subscription-conteiner">
+    <div class="subscription-container">
       <h3 class="footer__subtitle">Підпишіться на розсилку</h3>
       <form class="subscription-form">
         <div class="subscription">
           <label for="mail"></label>
-          <input type="email" name="mail" id="mail" class="subscription-mail" placeholder="E-mail">
+          <input type="email" name="mail" id="mail" class="subscription__mail" placeholder="E-mail">
         </div>
-          <button type="submit" class="btn-subscription">          Підписатися
+          <button type="submit" class="subscription__btn">          Підписатися
           <svg class="icon-svg" width="24px" height="24px"><use href="./images/icon/symbol-defs.svg#icon-icon-send"></use></svg>
           </button>
         </form>
