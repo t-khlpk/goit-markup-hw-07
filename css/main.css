@@ -89,6 +89,24 @@ img {
   padding-bottom: 94px;
 }
 
+.section__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.section--other {
+  background-color: var(--primary-section-color);
+}
+
+.section--none {
+  padding-top: 0;
+}
+
 .header .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,7 +146,7 @@ img {
   position: relative;
 }
 
-.site-nav__link.link-activ::after {
+.site-nav__link-link__activ::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -182,7 +200,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-activ {
+.site-nav__link-link__activ {
   color: var(--accent-color);
   text-decoration: none;
 }
@@ -433,7 +451,7 @@ img {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.benefits__list {
+.benefits {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,7 +460,6 @@ img {
           justify-content: center;
   gap: 30px;
 }
-
 .benefits__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,12 +476,10 @@ img {
           justify-content: center;
   border-radius: 4%;
 }
-
 .benefits__icon {
   width: 70px;
   height: 70px;
 }
-
 .benefits__title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -474,7 +489,6 @@ img {
   text-transform: uppercase;
   color: var(--title-color);
 }
-
 .benefits__text {
   font-size: 14px;
   line-height: 1.71;
@@ -483,9 +497,6 @@ img {
 }
 
 .features {
-  padding-top: 0;
-}
-.features__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,20 +508,10 @@ img {
           justify-content: center;
   gap: 30px;
 }
-.features__title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-}
-
-.thumb {
+.features__thumb {
   position: relative;
 }
-.thumb__text {
+.features__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -534,10 +535,19 @@ img {
 }
 
 .team {
-  background-color: var(--primary-section-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
 }
 
-.section.team .team__list-item {
+.team__item {
   background-color: var(--primary-white-color);
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -552,29 +562,6 @@ img {
 }
 
 .team__title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-}
-
-.team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 30px;
-}
-
-.team__item {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -636,20 +623,10 @@ img {
   fill: currentColor;
 }
 
-.client__list {
+.client {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.client__tittle {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-  color: var(--title-color);
 }
 
 .client__item {
@@ -942,12 +919,6 @@ img {
   overflow: hidden;
 }
 
-.project__link:hover .project__thumb-text,
-.project__link:focus .project__thumb-text {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
 .project__thumb-text {
   position: absolute;
   width: 100%;
@@ -966,6 +937,10 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.project__link:hover .project__thumb-text, .project__link:focus .project__thumb-text {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
 
 .logo {
   margin-right: 93px;
@@ -981,7 +956,7 @@ img {
   text-decoration: none;
   color: var(--accent-color);
 }
-.logo-color {
+.logo__color {
   color: var(--logo-color);
 }
 

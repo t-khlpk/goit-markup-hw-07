@@ -1,25 +1,13 @@
 .features {
-    padding-top: 0;
-
-    &__list{
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 30px;
-    }
-    &__title {
-      margin-bottom: 50px;
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 1.17;
-      text-align: center;
-      letter-spacing: 0.03em;
-      color: var(--title-color)
-    } 
-  }
-  
-  .thumb {
+    
+       
+    &__thumb {
     position: relative;
+  }
 
     &__text {
       display: flex;
@@ -37,5 +25,5 @@
       color: var(--primary-white-color);
       text-transform: uppercase;
     } 
-  }
   
+  }
